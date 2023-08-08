@@ -7,6 +7,7 @@ game.StarterGui:SetCore("SendNotification", {
     Button1 = "";  
     Button2 = "";
 })
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Trixhub V2", "DarkTheme")
 local Tab = Window:NewTab("utilitys")
@@ -22,3 +23,8 @@ local Section = Tab:NewSection("Moblie scripts")
 Section:NewButton("Fly moblie", "V2 fly", function()
     print("a")
 end)
+
+Section:NewButton("Admin Hub", "Admin hub with all the choices you love", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PureMids/adminhub/main/main.lua", true))()
+end)
+
